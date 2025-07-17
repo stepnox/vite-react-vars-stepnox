@@ -4,6 +4,7 @@ interface NavbarProps {
   active: string
   setActive: (page: string) => void
 }
+
 function Navbar({ active, setActive }: NavbarProps) {
 
   return (
@@ -11,10 +12,10 @@ function Navbar({ active, setActive }: NavbarProps) {
       <h1 className="navbar-brand mb-3">Navbar</h1>
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <a className={`nav-link${active === 'Dashboard' ? ' active' : ''}`} aria-current="page" href="#" onClick={() => setActive('Dashboard')}>Dashboard</a>
+          <button className={`nav-link${active === 'Dashboard' ? ' active' : ''}`} aria-current="page" onClick={() => setActive('Dashboard')}>Dashboard</button>
         </li>
         <li>
-          <a className={`nav-link${active === 'Data' ? ' active' : ''}`} href="#" onClick={() => setActive('Data')}>Data</a>
+          <button className={`nav-link${active === 'Report' ? ' active' : ''}`} onClick={() => setActive('Report')}>Report</button>
         </li>
       </ul>
     </nav>

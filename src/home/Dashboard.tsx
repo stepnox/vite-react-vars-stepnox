@@ -1,10 +1,23 @@
 import './Dashboard.css'
+import summary from '../../data/summary2.0.json'
 
+const tests = summary.vulnerability_test
 
-function Dashboard() {
+interface DashboardProps {
+  setActivePage: (name: string, itemId: string) => void
+}
+
+const Dashboard = ({setActivePage}: DashboardProps) => {
   return (
     <div className="dashboard">
-      <p>This is the dashboard page.</p>
+      <p>Welcome to the dashboard. Here you can find an overview of your reports.</p>
+      <ul>
+        {tests.map(test => (
+          <li key={test.test_id}>
+            <button onClick={() => setActivePage('Report', test.test_id)}>{test.results[0].domain_name}</button>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }

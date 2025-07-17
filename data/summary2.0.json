@@ -1,6 +1,7 @@
 {
   "vulnerability_test": [
     {
+      "test_id": "1",
       "status": "success",
       "results": [
         {
@@ -43,6 +44,41 @@
               "n": 21
             }
           },
+          "certificates": [
+            { "issuer": "Let's Encrypt", "subject": "cybersonar.demo", "expires": "2025-08-01", "status": "active" },
+            { "issuer": "DigiCert", "subject": "cybersonar.demo", "expires": "2025-07-15", "status": "active" },
+            { "issuer": "GlobalSign", "subject": "cybersonar.demo", "expires": "2025-06-30", "status": "active" },
+            { "issuer": "Lorem Ipsum CA", "subject": "cybersonar.demo", "expires": "2025-05-20", "status": "active" },
+            { "issuer": "Comodo", "subject": "cybersonar.demo", "expires": "2025-04-10", "status": "active" },
+            { "issuer": "Sectigo", "subject": "cybersonar.demo", "expires": "2025-03-01", "status": "active" },
+            { "issuer": "RapidSSL", "subject": "cybersonar.demo", "expires": "2025-02-14", "status": "active" },
+            { "issuer": "Thawte", "subject": "cybersonar.demo", "expires": "2025-01-30", "status": "active" },
+            { "issuer": "GeoTrust", "subject": "cybersonar.demo", "expires": "2025-01-01", "status": "active" },
+            { "issuer": "AlphaSSL", "subject": "cybersonar.demo", "expires": "2024-12-15", "status": "active" },
+            { "issuer": "Lorem Ipsum CA", "subject": "cybersonar.demo", "expires": "2024-11-20", "status": "active" },
+            { "issuer": "Certum", "subject": "cybersonar.demo", "expires": "2024-10-10", "status": "active" },
+            { "issuer": "Trustwave", "subject": "cybersonar.demo", "expires": "2024-09-01", "status": "active" },
+            { "issuer": "SwissSign", "subject": "cybersonar.demo", "expires": "2024-08-14", "status": "active" },
+            { "issuer": "Buypass", "subject": "cybersonar.demo", "expires": "2024-07-30", "status": "active" },
+            { "issuer": "Let's Encrypt", "subject": "cybersonar.demo", "expires": "2024-06-01", "status": "expired" },
+            { "issuer": "DigiCert", "subject": "cybersonar.demo", "expires": "2024-05-15", "status": "expired" },
+            { "issuer": "GlobalSign", "subject": "cybersonar.demo", "expires": "2024-04-30", "status": "expired" },
+            { "issuer": "Lorem Ipsum CA", "subject": "cybersonar.demo", "expires": "2024-03-20", "status": "expired" },
+            { "issuer": "Comodo", "subject": "cybersonar.demo", "expires": "2024-02-10", "status": "expired" },
+            { "issuer": "Sectigo", "subject": "cybersonar.demo", "expires": "2024-01-01", "status": "expired" },
+            { "issuer": "RapidSSL", "subject": "cybersonar.demo", "expires": "2023-12-14", "status": "expired" },
+            { "issuer": "Thawte", "subject": "cybersonar.demo", "expires": "2023-11-30", "status": "expired" },
+            { "issuer": "GeoTrust", "subject": "cybersonar.demo", "expires": "2023-11-01", "status": "expired" },
+            { "issuer": "AlphaSSL", "subject": "cybersonar.demo", "expires": "2023-10-15", "status": "expired" },
+            { "issuer": "Lorem Ipsum CA", "subject": "cybersonar.demo", "expires": "2023-09-20", "status": "expired" },
+            { "issuer": "Certum", "subject": "cybersonar.demo", "expires": "2023-08-10", "status": "expired" },
+            { "issuer": "Trustwave", "subject": "cybersonar.demo", "expires": "2023-07-01", "status": "expired" },
+            { "issuer": "SwissSign", "subject": "cybersonar.demo", "expires": "2023-06-14", "status": "expired" },
+            { "issuer": "Buypass", "subject": "cybersonar.demo", "expires": "2023-05-30", "status": "expired" },
+            { "issuer": "Lorem Ipsum CA", "subject": "cybersonar.demo", "expires": "2023-04-20", "status": "expired" },
+            { "issuer": "Comodo", "subject": "cybersonar.demo", "expires": "2023-03-10", "status": "expired" },
+            { "issuer": "Sectigo", "subject": "cybersonar.demo", "expires": "2023-02-01", "status": "expired" }
+          ],
           "n_cert_attivi": 15,
           "n_cert_scaduti": 18,
           "n_asset": 102,
@@ -120,16 +156,17 @@
       ]
     },
     {
+      "test_id": "2",
       "status": "success",
       "results": [
         {
           "idsummary": "d1923479-e084-4ade-b18c-0c2262b8fb6a",
-          "summary_text": "**Riepilogo Esecutivo della Vulnerabilità per \"cybersonar.demo\"**\n\nIl dominio \"cybersonar.demo\" attualmente presenta una situazione di sicurezza altamente critica, con un punteggio di rischio di 99 su 100, indicando una situazione estremamente pericolosa con multiple vulnerabilità severe, fuga di dati significativa e/o eccessiva esposizione dei servizi. E' richiesta un'azione immediata.\n\n**Vulnerabilità:**\n- Totale vulnerabilità rilevate: 162, con 2 vulnerabilità critiche attive, 18 vulnerabilità passive di alto livello, e una distribuzione varia di vulnerabilità di medio livello (52 totali, di cui 3 attive), e 90 vulnerabilità informative. Non sono state individuate vulnerabilità di basso livello.\n\n**Esposizione dei Servizi:**\n- E' stata identificata un\"esposizione significativa ai servizi attraverso 102 asset totali con 30 indirizzi IPv4 e 23 IPv6 unici. Le porte più esposte comprendono la porta 80 (68 istanze), 443 (42 istanze), nonchè le porte 8800, 53, 6697, 6667, e 8080 con un numero variabile di esposizioni.\n\n**Fuga di Dati:**\n- Le fughe di dati sono sostanziali, con 1 fuga di dati relativa al \"domain_stealer\" non risolta, 826 fughe di dati potenzialmente pericolose (potential_stealer) e 11 altre fughe di dati (other_stealer). Non ci sono fughe di dati VIP o generali rilevate.\n\n**Certificati e Tecnologia:**\n- Sono state riscontrate problematiche relative ai certificati con 15 certificati attivi e 18 scaduti. Questa situazione può comportare rischi aggiuntivi per la sicurezza delle comunicazioni.\n- L'implementazione tecnologica prevede misure di sicurezza quali Web Application Firewall (WAF) su 4 asset, ma nessun Content Delivery Network (CDN) è in uso, aumentando l'esposizione agli attacchi DDoS e ad altre minacce internet.\n\n**Sicurezza Email:**\n- La sicurezza email è vulnerabile allo spoofing, nonostante la politica DMARC sia impostata su \"quarantena\". Non sono state rilevate presenze in blacklist.\n\nLa combinazione delle vulnerabilità critiche, l\"ampio numero di potential_stealer, e l'eccessiva esposizione dei servizi porta ad una situazione di estrema urgenza. Sono necessarie azioni immediate per mitigare i rischi, risolvere le vulnerabilità e migliorare la sicurezza generale del dominio \"cybersonar.demo\".",
-          "summary_text_en": "**Executive Summary of Vulnerability for \"cybersonar.demo\"**\n\nThe domain \"cybersonar.demo\" currently has a highly critical security situation, with a risk score of 99 out of 100, indicating an extremely dangerous situation with multiple severe vulnerabilities, significant data leakage, and/or excessive exposure of services. Immediate action is required.\n\n**Vulnerability:**\n- Total vulnerabilities detected: 162, with 2 active critical vulnerabilities, 18 high-level passive vulnerabilities, and a varied distribution of mid-level vulnerabilities (52 total, including 3 active), and 90 informational vulnerabilities. No low-level vulnerabilities were detected.\n\n**Exposure of Services:**\n- Significant exposure to services was identified across 102 total assets with 30 unique IPv4 and 23 IPv6 addresses. The most exposed ports include port 80 (68 instances), 443 (42 instances), as well as ports 8800, 53, 6697, 6667, and 8080 with varying numbers of exposures.\n\n**Data Leakage:**\n- Data leaks are substantial, with 1 data leak related to \"domain_stealer\" unresolved, 826 potentially dangerous data leaks (potential_stealer), and 11 other data leaks (other_stealer). There are no VIP or general data leaks detected.\n\n**Certificates and Technology:**\n- Certificate issues were found with 15 active and 18 expired certificates. This situation may pose additional risks to communication security.\n- Technology implementation includes security measures such as Web Application Firewall (WAF) on 4 assets, but no Content Delivery Network (CDN) is in use, increasing exposure to DDoS attacks and other Internet threats.\n\n**Email Security:**\n- Email security is vulnerable to spoofing, despite DMARC policy being set to \"quarantine.\" No blacklisting has been detected.\n\nThe combination of critical vulnerabilities, the large number of potential_stealers, and excessive exposure of services leads to an extremely urgent situation. Immediate actions are needed to mitigate risks, resolve vulnerabilities, and improve the overall security of the \"cybersonar.demo\" domain.",
+          "summary_text": "**Riepilogo Esecutivo della Vulnerabilità per \"intrusion.demo\"**\n\nIl dominio \"intrusion.demo\" attualmente presenta una situazione di sicurezza altamente critica, con un punteggio di rischio di 99 su 100, indicando una situazione estremamente pericolosa con multiple vulnerabilità severe, fuga di dati significativa e/o eccessiva esposizione dei servizi. E' richiesta un'azione immediata.\n\n**Vulnerabilità:**\n- Totale vulnerabilità rilevate: 162, con 2 vulnerabilità critiche attive, 18 vulnerabilità passive di alto livello, e una distribuzione varia di vulnerabilità di medio livello (52 totali, di cui 3 attive), e 90 vulnerabilità informative. Non sono state individuate vulnerabilità di basso livello.\n\n**Esposizione dei Servizi:**\n- E' stata identificata un\"esposizione significativa ai servizi attraverso 102 asset totali con 30 indirizzi IPv4 e 23 IPv6 unici. Le porte più esposte comprendono la porta 80 (68 istanze), 443 (42 istanze), nonchè le porte 8800, 53, 6697, 6667, e 8080 con un numero variabile di esposizioni.\n\n**Fuga di Dati:**\n- Le fughe di dati sono sostanziali, con 1 fuga di dati relativa al \"domain_stealer\" non risolta, 826 fughe di dati potenzialmente pericolose (potential_stealer) e 11 altre fughe di dati (other_stealer). Non ci sono fughe di dati VIP o generali rilevate.\n\n**Certificati e Tecnologia:**\n- Sono state riscontrate problematiche relative ai certificati con 15 certificati attivi e 18 scaduti. Questa situazione può comportare rischi aggiuntivi per la sicurezza delle comunicazioni.\n- L'implementazione tecnologica prevede misure di sicurezza quali Web Application Firewall (WAF) su 4 asset, ma nessun Content Delivery Network (CDN) è in uso, aumentando l'esposizione agli attacchi DDoS e ad altre minacce internet.\n\n**Sicurezza Email:**\n- La sicurezza email è vulnerabile allo spoofing, nonostante la politica DMARC sia impostata su \"quarantena\". Non sono state rilevate presenze in blacklist.\n\nLa combinazione delle vulnerabilità critiche, l\"ampio numero di potential_stealer, e l'eccessiva esposizione dei servizi porta ad una situazione di estrema urgenza. Sono necessarie azioni immediate per mitigare i rischi, risolvere le vulnerabilità e migliorare la sicurezza generale del dominio \"cybersonar.demo\".",
+          "summary_text_en": "**Executive Summary of Vulnerability for \"intrusion.demo\"**\n\nThe domain \"intrusion.demo\" currently has a highly critical security situation, with a risk score of 99 out of 100, indicating an extremely dangerous situation with multiple severe vulnerabilities, significant data leakage, and/or excessive exposure of services. Immediate action is required.\n\n**Vulnerability:**\n- Total vulnerabilities detected: 162, with 2 active critical vulnerabilities, 18 high-level passive vulnerabilities, and a varied distribution of mid-level vulnerabilities (52 total, including 3 active), and 90 informational vulnerabilities. No low-level vulnerabilities were detected.\n\n**Exposure of Services:**\n- Significant exposure to services was identified across 102 total assets with 30 unique IPv4 and 23 IPv6 addresses. The most exposed ports include port 80 (68 instances), 443 (42 instances), as well as ports 8800, 53, 6697, 6667, and 8080 with varying numbers of exposures.\n\n**Data Leakage:**\n- Data leaks are substantial, with 1 data leak related to \"domain_stealer\" unresolved, 826 potentially dangerous data leaks (potential_stealer), and 11 other data leaks (other_stealer). There are no VIP or general data leaks detected.\n\n**Certificates and Technology:**\n- Certificate issues were found with 15 active and 18 expired certificates. This situation may pose additional risks to communication security.\n- Technology implementation includes security measures such as Web Application Firewall (WAF) on 4 assets, but no Content Delivery Network (CDN) is in use, increasing exposure to DDoS attacks and other Internet threats.\n\n**Email Security:**\n- Email security is vulnerable to spoofing, despite DMARC policy being set to \"quarantine.\" No blacklisting has been detected.\n\nThe combination of critical vulnerabilities, the large number of potential_stealers, and excessive exposure of services leads to an extremely urgent situation. Immediate actions are needed to mitigate risks, resolve vulnerabilities, and improve the overall security of the \"intrusion.demo\" domain.",
           "risk_score": "99",
           "creation_date": "2024-03-07 18:08:41",
           "last_edit": "2024-03-08 14:09:44",
-          "domain_name": "cybersonar.demo",
+          "domain_name": "intrusion.demo",
           "servizi_esposti_score": 99,
           "dataleak_score": 100,
           "rapporto_leak_email_score": 50,
@@ -162,8 +199,30 @@
               "n": 21
             }
           },
-          "n_cert_attivi": 15,
-          "n_cert_scaduti": 18,
+          "certificates": [
+            { "issuer": "Let's Encrypt", "subject": "cybersonar.demo", "expires": "2025-08-01", "status": "active" },
+            { "issuer": "DigiCert", "subject": "cybersonar.demo", "expires": "2025-07-15", "status": "active" },
+            { "issuer": "GlobalSign", "subject": "cybersonar.demo", "expires": "2025-06-30", "status": "active" },
+            { "issuer": "Lorem Ipsum CA", "subject": "cybersonar.demo", "expires": "2025-05-20", "status": "active" },
+            { "issuer": "AlphaSSL", "subject": "cybersonar.demo", "expires": "2024-12-15", "status": "active" },
+            { "issuer": "Lorem Ipsum CA", "subject": "cybersonar.demo", "expires": "2024-11-20", "status": "active" },
+            { "issuer": "Certum", "subject": "cybersonar.demo", "expires": "2024-10-10", "status": "active" },
+            { "issuer": "Trustwave", "subject": "cybersonar.demo", "expires": "2024-09-01", "status": "active" },
+            { "issuer": "SwissSign", "subject": "cybersonar.demo", "expires": "2024-08-14", "status": "active" },
+            { "issuer": "Buypass", "subject": "cybersonar.demo", "expires": "2024-07-30", "status": "active" },
+            { "issuer": "Let's Encrypt", "subject": "cybersonar.demo", "expires": "2024-06-01", "status": "expired" },
+            { "issuer": "DigiCert", "subject": "cybersonar.demo", "expires": "2024-05-15", "status": "expired" },
+            { "issuer": "GlobalSign", "subject": "cybersonar.demo", "expires": "2024-04-30", "status": "expired" },
+            { "issuer": "Lorem Ipsum CA", "subject": "cybersonar.demo", "expires": "2024-03-20", "status": "expired" },
+            { "issuer": "Comodo", "subject": "cybersonar.demo", "expires": "2024-02-10", "status": "expired" },
+            { "issuer": "Sectigo", "subject": "cybersonar.demo", "expires": "2024-01-01", "status": "expired" },
+            { "issuer": "RapidSSL", "subject": "cybersonar.demo", "expires": "2023-12-14", "status": "expired" },
+            { "issuer": "Thawte", "subject": "cybersonar.demo", "expires": "2023-11-30", "status": "expired" },
+            { "issuer": "GeoTrust", "subject": "cybersonar.demo", "expires": "2023-11-01", "status": "expired" }
+
+          ],
+          "n_cert_attivi": 10,
+          "n_cert_scaduti": 9,
           "n_asset": 102,
           "n_similar_domains": 13,
           "email_security": {
