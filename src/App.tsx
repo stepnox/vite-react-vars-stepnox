@@ -1,33 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useEffect } from 'react'
 import './App.css'
+import Navbar from './utils/Navbar.tsx'
+import Dashboard from './home/Dashboard.tsx'
+import Data from './home/Data.tsx'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activePage, setActivePage] = useState(() => {
+    return localStorage.getItem('activePage') || 'Dashboard'
+  })
+
+  useEffect(() => {
+    localStorage.setItem('activePage', activePage)
+  }, [activePage])
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="d-flex" >
+      <Navbar active={activePage} setActive={setActivePage} />
+        <div className="content container-fluid p-4">
+          <h1>{activePage}</h1>
+          {activePage === 'Dashboard' && <Dashboard />}
+          {activePage === 'Data' && <Data />}
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
