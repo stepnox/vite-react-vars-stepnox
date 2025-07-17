@@ -16,9 +16,9 @@ function App() {
 
   return (
     <>
-      <div className="d-flex" >
+      <div className="d-flex" style={{ height: '100vh', overflow: 'hidden' }}>
       <Navbar active={activePage} setActive={setActivePage} />
-        <div className="content container-fluid p-4">
+        <div className="content container-fluid p-4" style={{ marginLeft: '250px',overflowY: 'auto', }}>
           <h1>{activePage}</h1>
           {activePage === 'Dashboard' && <Dashboard />}
           {activePage === 'Data' && <Data />}

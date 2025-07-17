@@ -2,7 +2,8 @@ nav {
     width: 250px;
     height: 100vh;
     background-color: #84a7ca;
-    color: white
+    color: white;
+    position: fixed;
 }
 
 .navbar-brand {
