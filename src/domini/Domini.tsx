@@ -22,7 +22,7 @@ const Domini = ({ setActivePage }: DominiProps) => {
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Dominio</th>
+                                <th>Dominio & Status Report</th>
                                 <th>Azioni</th>
                                 <th>Data Creazione</th>
                             </tr>
@@ -31,7 +31,7 @@ const Domini = ({ setActivePage }: DominiProps) => {
                             {tests.map((test, idx) => (
                                 <tr key={test.test_id}>
                                     <td>{idx + 1}</td>
-                                    <td>{test.results[0].domain_name}</td>
+                                    <td>{test.results[0].domain_name} {test.status === "error" ? (<i className="fas fa-exclamation-triangle text-danger ms-2"></i>) : (<i className="fas fa-check-circle text-success ms-2"></i>)}</td>
                                     <td> <button onClick={() => setActivePage('Report', test.test_id)}><i className="fas fa-file ms-2" ></i> Visualizza Report</button>
                                     </td>
                                     <td>{test.results[0].creation_date}</td>
