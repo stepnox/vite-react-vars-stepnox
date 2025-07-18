@@ -40,7 +40,7 @@ function Certificati({ itemId }: CertificatiProps) {
                   <td>{cert.expires}</td>
                   <td>
                     <span className={cert.status === 'active' ? 'text-success' : 'text-danger'}>
-                      {cert.status}
+                      <strong>{cert.status === 'active' ? 'Attivo' : 'Scaduto'}</strong>
                     </span>
                   </td>
                 </tr>

@@ -1,13 +1,7 @@
-nav {
-    width: 250px;
-    height: 100vh;
-    background-color: #84a7ca;
-    color: white;
-    position: fixed;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
+nav .nav-link.active {
+    background-color: rgb(75, 75, 75) !important;
+    color: #fff !important;
+    border-radius: 0.5rem;
     font-weight: bold;
-    color: white;
+    /* altri stili personalizzati */
 }
